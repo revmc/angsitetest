@@ -1,0 +1,22 @@
+{
+  "name": "angular_resume",
+  "version": "0.0.1",
+  "authors": [
+    "shaque <shaque9000@gmail.com>"
+  ],
+  "description": "An Web page with my resume, built using Angular",
+  "main": "index.html",
+  "keywords": [
+    "resume"
+  ],
+  "license": "MIT",
+  "homepage": "shaque9000.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
