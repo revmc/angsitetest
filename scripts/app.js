@@ -1,4 +1,20 @@
-angular.module('resumeApp', [])
-.controller('experienceCtrl', ['$scope', function($scope) {
-	$scope.test = "hello world";
+angular.module('resumeApp', ['ui.router'])
+.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+	
+	$urlRouterProvider.otherwise('/');
+
+	$stateProvider.state(
+		'experience',
+		{
+			url: '/',
+			templateUrl: 'templates/experience.html'
+		}
+	)
+	.state(
+		'education',
+		{
+			url: 'education',
+			templateUrl: 'templates/education.html'
+		});
+
 }]);

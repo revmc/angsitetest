@@ -3,11 +3,14 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">l
 </head>
-<body ng-app='resumeApp'>
-    <div ng-controller='experienceCtrl'>
-    	{{test}}
-    </div>
+<body ng-app="resumeApp">
+	<div class="container">
+		<header ng-include="'templates/header.html'"></header>
+		<div ui-view></div>
+		<footer ng-include="'templates/footer.html'"></footer>
+	</div>
 	<script src='bower_components/angular/angular.min.js'></script>
 	<script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
 	<script src='scripts/app.js'></script>
