@@ -1,4 +1,18 @@
 body {
-	background-color: yellow;
-	color: #333;
+	margin: 0;
+}
+nav {
+	width: 100%;
+	background-color: #ccc;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	background-color: #999;
+	color: #fff;
+	padding: 20px;
 }
