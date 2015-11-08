@@ -1,5 +1,12 @@
-<h1>Experience</h1>
 
-<div>
-	This page lists my work experience.
+<div class="experienceContainer" ng-controller="expCtrl">
+	<h1>{{data.title}}</h1>
+
+	<ul>
+		<li ng-repeat="item in data.experienceItems">
+			<h2>{{item.employer}}</h2>
+			<em>{{item.start}} - {{item.end}}</em>
+			<p>{{item.description}}</p>
+		</li>	
+	</ul>
 </div>
