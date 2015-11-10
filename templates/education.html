@@ -1,3 +1,12 @@
-<h1>Education</h1>
+<div class="educationContainer" ng-controller="eduCtrl">
+	<h1>{{data.title}}</h1>
 
-This is where I list my education.
+	<ul>
+		<li ng-repeat="item in data.items">
+			<h2>{{item.schoolName}}</h2>
+			<h3>{{item.degreeLevel}}, {{item.major}}</h3>
+			<em>{{item.start}} - {{item.end}}</em>
+		</li>	
+	</ul>
+
+</div>

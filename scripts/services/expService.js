@@ -4,7 +4,7 @@ angular.module('resumeApp')
 	return {
 		data: {
 	    	title: 'Experience',
-	    	experienceItems: [
+	    	items: [
 	    		{
 	    			employer: 'Qlik',
 	    			start: '7/13/15',

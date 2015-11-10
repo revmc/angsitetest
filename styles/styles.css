@@ -13,7 +13,7 @@ nav {
 	background-color: #ccc;
 }
 
-nav ul {
+ul {
 	list-style: none;
 }
 
@@ -25,14 +25,23 @@ nav ul li {
 	padding: 20px;
 }
 
+.experienceContainer, .educationContainer, .skillsContainer {
+    margin-bottom: 50px;
+}
+
 .experienceContainer ul {
 	list-style: none;
 }
 
 footer {
 	width: 100%;
-	margin-left: 50% 50% auto;
-	margin-right: 50% 50% auto;
+	height: 50px;
 	position: fixed;
 	bottom: 0px;
+	text-align: center;
+}
+
+footer span {
+	margin-left: auto;
+	margin-right: auto;
 }
