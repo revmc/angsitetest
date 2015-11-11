@@ -1,3 +1,6 @@
-<h1>Skills</h1>
-
-This is where I list my skills.
+<div class="skillsContainer" ng-controller="skillsCtrl">
+	<h1>{{data.title}}</h1>
+	<ul>
+		<li ng-repeat="item in data.items">{{item}}</li>
+	</ul>
+</div>
