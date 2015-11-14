@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body ng-app="resumeApp">
+<body ng-app="resumeApp" onload="showBody()">
 	<div class="container">
 		<header ng-include="'templates/header.html'"></header>
 		<div ui-view></div>
@@ -14,6 +14,11 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 	<script src="scripts/app.js"></script>
+	<script>
+		function showBody() {
+			document.querySelector('body').style.opacity = 1;
+		}
+	</script>
 	<script src="scripts/controllers/experienceController.js"></script>
 	<script src="scripts/controllers/educationController.js"></script>
 	<script src="scripts/controllers/skillsController.js"></script>
